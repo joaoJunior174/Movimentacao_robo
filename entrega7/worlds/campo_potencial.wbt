@@ -1,0 +1,94 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  info [
+    ""
+    ""
+    ""
+    ""
+  ]
+  contactProperties [
+    ContactProperties {
+      material1 "ExteriorWheelMat"
+      coulombFriction [
+        1.8, 1, 0.2
+      ]
+      frictionRotation 0.965 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+    ContactProperties {
+      material1 "InteriorWheelMat"
+      coulombFriction [
+        1.8, 1, 0.2
+      ]
+      frictionRotation -0.965 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.9955922352390522 0.06116715828815226 0.07109627190408538 1.6358423057812688
+  position 4.588414761833969 21.182325587872736 4.089132728100278
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 7.08 0 7.19
+  floorSize 15 15
+  floorTileSize 1.5 1.5
+}
+Youbot {
+  translation -0.027955 0.101247 0.0181511
+  rotation 0.999997047023582 -0.0022365982445643143 0.0009505642579754503 -1.5708831079468493
+  controller "campo_potencial"
+  bodySlot [
+    DEF gps GPS {
+    }
+  ]
+}
+OilBarrel {
+  translation 0.71 0.49 6.78
+}
+OilBarrel {
+  translation 0.74 0.49 12.71
+  name "oil barrel(7)"
+}
+OilBarrel {
+  translation 6.71 0.49 3.73
+  name "oil barrel(4)"
+}
+OilBarrel {
+  translation 12.73 0.49 3.73
+  name "oil barrel(6)"
+}
+OilBarrel {
+  translation 8.29 0.49 0.76
+  name "oil barrel(9)"
+}
+OilBarrel {
+  translation 9.8 0.49 6.68
+  name "oil barrel(5)"
+}
+OilBarrel {
+  translation 2.27 0.49 2.28
+  name "oil barrel(3)"
+}
+OilBarrel {
+  translation 5.97 0.49 11.29
+  name "oil barrel(1)"
+}
+OilBarrel {
+  translation 3.03 0.49 10.46
+  name "oil barrel(8)"
+}
+OilBarrel {
+  translation 12.71 0.49 11.24
+  name "oil barrel(2)"
+}
